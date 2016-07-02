@@ -1,1 +1,48 @@
-<title>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="hellocss"/>
+        <title>Result</title>
+    </head>
+    <body>
+        <div id="header" >
+            <div id="navbar">
+                <ul>
+                    <li>YOUR</li>
+                    <li>BEST</li>
+                    <li>TODO</li>
+                    <li>LIST</li>
+                </ul>
+            </div>
+            <h2>TODO LIST</h2>
+        </div>
+        <div id="left">
+        <p></p>
+        </div>
+        <div id="right">
+        <table>
+            <th colspan="3"></th>
+        </table>
+        </div>
+        <div id="footer">
+            <div id="button">
+                <p><span class="bold">did you like it?</span></p>
+            </div>
+        </div>
+    <button onclick="ask()">+</button>
+    <script language="JavaScript">
+
+function ask(){
+
+var x = prompt("what's your TODO LIST?");
+// console.log(x)
+var li = document.createElement("LI");
+li.textContent = x;
+document.getElementById("left").appendChild(li);
+}
+
+</script>
+    <button class ="clearall">clear all</button>
+    <button class ="clear">clear </button>
+    </body>
+</html>
