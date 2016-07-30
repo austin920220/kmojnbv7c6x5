@@ -1,48 +1,22 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="hellocss"/>
-        <title>Result</title>
-    </head>
-    <body>
-        <div id="header" >
-            <div id="navbar">
-                <ul>
-                    <li>1</li>
-                    <li>1</li>
-                    <li>1</li>
-                    <li>1</li>
-                </ul>
-            </div>
-            <h2>1</h2>
-        </div>
-        <div id="left">
-        <p></p>
-        </div>
-        <div id="right">
-        <table>
-            <th colspan="3"></th>
-        </table>
-        </div>
-        <div id="footer">
-            <div id="button">
-                <p><span class="bold">did you like it?</span></p>
-            </div>
-        </div>
-    <button onclick="ask()">+</button>
-    <script language="JavaScript">
-
-function ask(){
-
-var x = prompt("1");
-// console.log(x)
-var li = document.createElement("LI");
-li.textContent = x;
-document.getElementById("left").appendChild(li);
-}
-
-</script>
-    <button class ="clearall">clear all</button>
-    <button class ="clear">clear </button>
-    </body>
-</html>
+  <head>
+    <title>Index</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fdb-all.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-md-12" style="text-align:center;">
+        <img src="images/11354532_10203908649108360_1970912033_o_promote.jpg" width="160px" style="margin-top:80px;"/>
+        <h1 style="margin-bottom:20px;">記帳ㄟ批批</h1>
+        <a class="btn btn-primary btn-lg btn-block" href="new-expense.html">記帳</a>
+        <a class="btn btn-primary btn-lg btn-block" href="10-expense.html">近十筆支出</a>
+        <a class="btn btn-primary btn-lg btn-block" href="search.html">過往支出查詢</a>
+      </div>
+    </div>
+  </body>
+<html>
